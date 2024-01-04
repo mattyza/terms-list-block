@@ -42,10 +42,10 @@ Once installed, run the following command to begin the build script while you co
 
 Additional scripts available include:
 
-`build`: Build the plugin.
-`format`: Adjust code formatting.
-`lint:css`: Lint the plugin's CSS code.
-`lint:js`: Lint the plugin's Javascript code.
-`packages-update`: Update all NPM packages to the latest versions.
-`plugin-zip`: Create a plugin ZIP file for distribution.
-`start`: Run the build process and have Webpack watch for changes to JavaScript and CSS.
+-  `build`: Build the plugin.
+-  `format`: Adjust code formatting.
+-  `lint:css`: Lint the plugin's CSS code.
+-  `lint:js`: Lint the plugin's Javascript code.
+-  `packages-update`: Update all NPM packages to the latest versions.
+-  `plugin-zip`: Create a plugin ZIP file for distribution.
+-  `start`: Run the build process and have Webpack watch for changes to JavaScript and CSS.
