@@ -6,50 +6,43 @@ Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-A dynamic list of terms for the selected taxonomy.
+Displays a list of terms for the selected taxonomy, or the current term when used in a taxonomy term archive template.
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+Displays a list of terms for the selected taxonomy, or the current term when used in a taxonomy term archive template.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+This block is intended for use in taxonomy archive templates, in pages to show a top-level list of terms, and on single entries to show terms assigned to that entry for a given taxonomy.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload the plugin files to the `/wp-content/plugins/terms-list-block` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+1. Activate the plugin through the 'Plugins' screen in WordPress.
+1. Find and add the "Terms List" block to your pages or taxonomy archive template.
 
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= The results of the block are different in the editor and on my website. What is happening here? =
 
-An answer to that question.
+The display in the editor is intended to be a basic display to show what the output of the block looks like, primarily for styling purposes.
 
-= What about foo bar? =
+When used on the frontend of your website, the block outputs based on what is given to it- either the selected taxonomy, or the content of the taxonomy archive or single post view being used.
 
-Answer to foo bar dilemma.
+= I see internal taxonomies for navigation menus and patterns in the "Select Taxonomy" field. I want these gone. =
+
+I know. So do I. The `getTaxonomies()` method is set to pull all registered taxonomies.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. The editor view of this block.
+2. An example of how the block outputs on the frontend, using a custom taxonomy.
 
 == Changelog ==
 
 = 0.1.0 =
 * Release
 
-== Arbitrary section ==
+== Attribution ==
 
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+This block is inspired by the layout of the "Categories" block in WordPress. The code used to output a list of categories in the editor is copied and modified from the "Categories" block.

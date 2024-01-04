@@ -6,7 +6,7 @@
 	"title": "Terms List",
 	"category": "widgets",
 	"icon": "list-view",
-	"description": "A list of terms for the selected taxonomy, or the current term when used in a taxonomy term archive template.",
+	"description": "Displays a list of terms for the selected taxonomy, or the current term when used in a taxonomy term archive template.",
 	"example": {
 		"attributes": {
             "selectedTaxonomy": "category",
