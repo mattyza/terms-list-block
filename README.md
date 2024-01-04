@@ -49,3 +49,17 @@ Additional scripts available include:
 -  `packages-update`: Update all NPM packages to the latest versions.
 -  `plugin-zip`: Create a plugin ZIP file for distribution.
 -  `start`: Run the build process and have Webpack watch for changes to JavaScript and CSS.
+
+### Using wp-env for development
+
+This repository includes an integration for [@wordpress/env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/).
+
+To use wp-env for development, do the following:
+
+-  Clone this repostiory to your local machine.
+-  In your Terminal, navigate to the newly cloned directory.
+-  Run `npm install`.
+-  Once completed, run `npm run env start`.
+-  After some time, your new local environment will be available with a URL shown in your Terminal.
+
+Please note, wp-env requires Docker Desktop to be installed and running on your system. Follow the guide in the [@wordpress/env handbook](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) to get Docker and all dependencies installed.
